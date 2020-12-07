@@ -1,0 +1,54 @@
+<ion-content>
+  <ion-grid>
+    <ion-col>
+      <ion-row>
+        <ion-col>
+          <ion-img class="icon" src="assets/imgs/LOGO2.png">  </ion-img>
+        </ion-col>
+        <ion-col>
+          Quienes somos
+        </ion-col>
+        <ion-col>
+          Nuestros Clientes
+        </ion-col>
+        <ion-col>
+          Trabaja con Nosotros
+        </ion-col>
+        <ion-col>
+          Contactanos
+        </ion-col>
+      </ion-row>    
+      
+      <ion-row>
+        <ion-col size=8>
+
+        </ion-col>
+        <ion-col>
+          <ion-item >
+            <ion-label position="floating"> Correo electrónico</ion-label>
+            <ion-input type="text" [(ngModel)]="correo_electronico" name="correo_electronico"></ion-input>
+          </ion-item>
+          <ion-item >
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input [type]="showPassword ? 'text':'password'" [(ngModel)]="contrasenia" name="contrasenia"></ion-input>
+            <ion-icon class="passico" slot="end" [name]="passwordIcon" (click)="iconPassword()"></ion-icon>
+          </ion-item>
+          <div>
+            <a class="content-link" routerLink="/resetpss">              <small >¿Olvidó su contraseña? Recuperar Contraseña</small>     </a>
+          </div>
+          <div>
+          <a class="content-link" routerLink="/register">            <small >¿No tienes una cuenta? Registrate</small>          </a>
+          </div>
+          <ion-button expand="full" (click)="on_submit_login()" class="boton">          INICIAR SESIÓN        </ion-button>
+        </ion-col>     
+      </ion-row>
+
+      
+      
+    </ion-col>
+  </ion-grid>
+  
+
+  
+
+</ion-content>

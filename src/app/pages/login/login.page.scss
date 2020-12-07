@@ -1,0 +1,34 @@
+.icon{
+    width: 70%;
+    height: 100%;
+}
+ion-item{
+    --background: white;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-right: 10px;;
+}
+.boton{
+    --background: #e6242f;  
+}
+
+.content-items{
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%; 
+    ion-item{
+        --highlight-color-valid: #e6242f; 
+       
+    }     
+    
+}
+.passico{
+    padding-top: 10%;
+}
+.content-link{
+    text-align: center;
+    color: #e6242f;
+    text-decoration: none;    
+}
